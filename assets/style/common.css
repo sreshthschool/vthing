@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+@keyframes fadein{
+    from{
+        opacity: 0;
+        transform: translateX(-90px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+:root{
+    --hovertxt: #9dacf8;
+    --shadow: 0px 0px 15px rgba(104, 104, 104, 0.17);
+    --txt: white;
+    --bodyy: #ede4f0;
+    --otherpurple: #ADB8F2;
+    --primary: linear-gradient(#ADB8F2, #BBC5F8);
+    
+
+    /* ====== Transition ====== */
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+}
+
+body{
+    min-height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: var(--bodyy);
+    transition: var(--tran-05);
+}
+
+::selection{
+    background-color: var(--primary-color);
+    color: #fff;
+}
